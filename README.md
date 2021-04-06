@@ -36,6 +36,13 @@ The default Git version is the master branch:
     $ cd desired/path/
     $ git clone https://github.com/ericrommel/test-box-website-with-selenium.git
 
+### Configuration
+You have to change the Configuration.properties files in order to add your own settings, for example, a correct email address and password for access the AUT
+
+    # configure properties
+    - Go to /src/test/resources
+    - Open and edit the Configuration.properties file
+    - Change the properties 'rightEmail' and 'rightPassword' and use one that can access the http://www.box.com
 
 ### Run
 This project has been done using IntelliJ as the IDE. From there, it is easy to configure and run the project.
