@@ -1,8 +1,6 @@
 package com.box;
 
 import com.pages.BoxHomePage;
-import com.pages.BoxLogin;
-import com.pages.BoxMainPage;
 import com.utilities.PropertyManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
@@ -12,11 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestBoxHomeSuite {
     String driverPath = PropertyManager.getInstance().getDriverPath();
@@ -38,15 +32,13 @@ public class TestBoxHomeSuite {
 
     @Test
     public void testHomePage() {
+        System.out.println("Driver: " + this.driverPath);
         Assertions.assertEquals(expectedHomeTitle.toLowerCase(), objHomePage.getHomePageTitle().toLowerCase());
     }
 
     @AfterEach
     public void testDown() {
-        // Close Driver
         driver.close();
-
-        // Quit Driver
         driver.quit();
     }
 }
