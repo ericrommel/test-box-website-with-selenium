@@ -43,6 +43,7 @@ You have to change the Configuration.properties files in order to add your own s
     - Go to /src/test/resources
     - Open and edit the Configuration.properties file
     - Change the properties 'rightEmail' and 'rightPassword' and use one that can access the http://www.box.com
+    - Change the path where your chromedriver.exe is in your machine
 
 ### Run
 This project has been done using IntelliJ as the IDE. From there, it is easy to configure and run the project.
