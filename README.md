@@ -19,7 +19,7 @@ Upload file functionality
 
 ## Technical Requirements
 
-These are the main tech requirement. The complete list is in requirements.txt.
+These are the main tech requirements used.
 - [Windows 10](https://www.microsoft.com/hu-hu/software-download/windows10)
 - [Java (JDK16)](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html)
 - [Maven (v3.8.1)](https://maven.apache.org/download.cgi)
@@ -30,14 +30,14 @@ These are the main tech requirement. The complete list is in requirements.txt.
 
 ### Installing
 
-The default Git version is the master branch:
+The default Git version is the main branch:
 
     # clone the repository
     $ cd desired/path/
     $ git clone https://github.com/ericrommel/test-box-website-with-selenium.git
 
 ### Configuration
-You have to change the Configuration.properties files in order to add your own settings, for example, a correct email address and password for access the AUT
+You have to change the Configuration.properties file in order to add your own settings, for example, a correct email address and password for access the SUT (System Under Testing)
 
     # configure properties
     - Go to /src/test/resources
